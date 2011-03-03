@@ -14,7 +14,7 @@
 
 <h2>Request</h2>
 
-<%= textilize(@exc.request) %>
+<%= textilize(@exc.request).html_safe %>
 
 <h2>Backtrace</h2>
 
@@ -26,4 +26,4 @@
 
 <h2>Environment</h2>
 
-<%= textilize(@exc.environment) %>
+<%= textilize(@exc.environment).html_safe %>
